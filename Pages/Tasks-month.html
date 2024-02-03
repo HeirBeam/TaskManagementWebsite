@@ -1,10 +1,10 @@
 <DOCTYPE html>
     <html>
     <head>
-    <link id="pagestyle" rel="stylesheet" type="text/css" href="css/MyCSS.css">
-    <script type="text/javascript" src="scripts/Function.js"> </script>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/MyCSS.css">
+    <script type="text/javascript" src="../scripts/Function.js"> </script>
     </head>
-        <a href="Account.html"><img src="images/pic_account.jpg" id="profileimage" alt="profile-picture"></a> 
+        <a href="Account.html"><img src="../images/pic_account.jpg" id="profileimage" alt="profile-picture"></a> 
         
         <body>
             <div class="topnav">
@@ -15,17 +15,17 @@
             
             </div>
             <p id="Change-css">Having trouble viewing the page? Try a different style
-                <button onclick="swapStyleSheet('css/AlternativeCSS.css')">Simpler page</button>
-                <button onclick="swapStyleSheet('css/MyCSS.css')">Original Page</button>
-                <button onclick="swapStyleSheet('css/DarkCSS.css')">Dark page</button>
+                <button onclick="swapStyleSheet('../css/AlternativeCSS.css')">Simpler page</button>
+                <button onclick="swapStyleSheet('../css/MyCSS.css')">Original Page</button>
+                <button onclick="swapStyleSheet('../css/DarkCSS.css')">Dark page</button>
             </p>
             <div class ="myDiv" class="tasks-header">
                 <h1>Tasks</h1>
                 <div class="tasknav">
                     <a href="Tasks.html">All Tasks</a>
-                    <a class="active" href ="Tasks-Today.html">Today</a>
+                    <a href ="Tasks-Today.html">Today</a>
                     <a href="Tasks-week.html">This week</a>
-                    <a href="Tasks-month.html">This month</a>
+                    <a class="active" href="Tasks-month.html">This month</a>
                 
                 </div>
                 <div class="tasks-addtasks">
@@ -33,14 +33,14 @@
             
                 <span onclick="newElement()" class="addBtn"> Add</span>
                 <ul id="myList">
-                    <li>Brush teeth</li>
+                    <li>Finish coursework</li>
         
                 </ul>
                 </div>
             </div>
         
     </body>
-    <script src="scripts/MyJS.js"></script>
+    <script src="../scripts/MyJS.js"></script>
     
     </html>
         

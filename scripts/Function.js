@@ -5,7 +5,7 @@ function validate() {
 	var password = document.getElementById("password").value;
 	if(username == "user@email.com" && password == "password") {
 		alert("Login sucessfully");
-		window.location.href = "Homepage.html";
+		window.location.href = "Pages/Homepage.html";
 		return false;
 
 	} else {
