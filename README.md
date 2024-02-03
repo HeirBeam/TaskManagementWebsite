@@ -1,2 +1,2 @@
 # Task Management Website
-Any early exploration into HTML and CSS to create a task management system.
+Any early exploration into HTML, CSS and JavaScript to create a task management system.
