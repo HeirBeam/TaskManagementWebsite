@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html>
+<head>
+<link id="pagestyle" rel="stylesheet" type="text/css" href="css/MyCSS.css">
+<script type="text/javascript" src="scripts/Function.js"> </script>
+
+</head>
+    <a href="Account.html"><img src="images/pic_account.jpg" id="profileimage" alt="profile-picture"></a> 
+    
+    <body>
+        <div class="topnav">
+            <a href="Homepage.html">Home</a>
+            <a href ="Account.html">Account</a>
+            <a class="active" href="Tasks.html">Tasks</a>
+            <a href="Calendar.html">Calendar</a>
+        
+        </div>
+        <p id="Change-css">Having trouble viewing the page? Try a different style
+            <button onclick="swapStyleSheet('css/AlternativeCSS.css')">Simpler page</button>
+            <button onclick="swapStyleSheet('css/MyCSS.css')">Original Page</button>
+            <button onclick="swapStyleSheet('css/DarkCSS.css')">Dark page</button>
+        </p>
+        <div>
+            <h1>Tasks</h1>
+            <div class="tasknav" >
+                <a class="active" href="#">All Tasks</a>
+                <a href ="Tasks-Today.html">Today</a>
+                <a href="Tasks-week.html">This week</a>
+                <a href="Tasks-month.html">This month</a>
+            
+            </div>
+            <div class="tasks-addtasks" >
+            <input type="text" id="myInput" placeholder="Add new task">
+        
+            <span onclick="newElement()" class="addBtn"> Add</span>
+            <ul id="myList">
+                <li>Brush teeth</li>
+                <li>Go on jog</li>
+                <li>Finish coursework</li>
+    
+            </ul>
+
+            </div>
+        </div>
+    
+</body>
+<script src="scripts/MyJS.js"></script>
+
+</html>
+    

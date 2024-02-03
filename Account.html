@@ -1,0 +1,45 @@
+<DOCTYPE html>
+<html>
+<head>
+<link id="pagestyle" rel="stylesheet" type="text/css" href="css/MyCSS.css">
+<script type="text/javascript" src="scripts/Function.js"> </script>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="topnav">
+            <a href="Homepage.html">Home</a>
+            <a class="active" href ="Account.html">Account</a>
+            <a href="Tasks.html">Tasks</a>
+            <a href="Calendar.html">Calendar</a>
+        </div>
+        <p id="Change-css">Having trouble viewing the page? Try a different style
+            <button onclick="swapStyleSheet('css/AlternativeCSS.css')">Simpler page</button>
+            <button onclick="swapStyleSheet('css/MyCSS.css')">Original Page</button>
+            <button onclick="swapStyleSheet('css/DarkCSS.css')">Dark page</button>
+        </p>
+
+        <div class="fullaccount-page">
+            <div class="accountpage-image">
+                <img src="images/pic_account.jpg" alt="profile-picture">
+                <button class="btn" onclick="signout()">Sign-out</button>
+                <button class="btn" onClick="editPicture()">Edit Picture</button>
+            </div>
+
+            <div class="account-info">
+                    <h4 class="text-right">Profile Settings</h4>
+                    <div><label class="labels">First Name</label><input type="text" placeholder="First Name" value="Michael" id="FirstName"></div>
+                    <button type="button" onClick="updateName()">Update First Name</button></div>
+                    <div><label class="labels">Last Name</label><input type="text" value="Jackson" placeholder="Surname" id="LastName"></div>
+                    <button type="button" onClick="updateLastName()">Update Last Name</button></div>
+                    <div><label class="labels">Password</label><input type="password"placeholder="Account password" value="password" id="password"></div>
+                    <button  type="button" onClick="updatePassword()">Update Password</button></div>
+                    <div><label class="labels">Email Address</label><input type="email"placeholder="Account Email" value="user@email.com" id="email"></div>
+                    <button type="button" onClick="updateEmail()">Update Email</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    

@@ -1,0 +1,52 @@
+<DOCTYPE html>
+    <html>
+    <head>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.js'></script>
+    <link id="pagestyle" rel="stylesheet" href="css/MyCSS.css">
+    <script src="scripts/calendar.js"></script>
+
+    </head>
+    <a href="Account.html"><img src="images/pic_account.jpg" id="profileimage" alt="profile-picture"></a> 
+
+    <body>
+    <div class="topnav">
+        <a href="Homepage.html">Home</a>
+        <a href ="Account.html">Account</a>
+        <a href="Tasks.html">Tasks</a>
+        <a class="active" href="Calendar.html">Calendar</a>
+        
+    </div>
+    <p id="Change-css" >Having trouble viewing the page? Try a different style
+        <button onclick="swapStyleSheet('css/AlternativeCSS.css')">Simpler page</button>
+        <button onclick="swapStyleSheet('css/MyCSS.css')">Original Page</button>
+        <button onclick="swapStyleSheet('css/DarkCSS.css')">Dark page</button>
+    </p>
+
+    <div style="width: 100%">
+    <div class="Taskbox" id="calendar-task" >
+        <h1>Add task</h1>
+        <form  id="form" Method="get">
+            
+            <label>Task description: </label>
+            <input type="text" placeholder="Enter a description of the task: " style="padding-bottom: 30px;" id="taskdesc"/>
+            
+            <label>Start date: </label>
+            <input type="date" id="startdate"  />
+            
+            <label>Due date: </label>
+            <input type ="date" id="enddate"  />
+            
+            <input type="button" value="Add task" id="tasksubmit" onclick="clickAlert()" >
+        </form>
+
+
+    </div>
+    <div class="calendar-page">
+        <div id='calendar'></div>
+    </div>
+
+    </div>
+    </body>
+    </html>
+    
